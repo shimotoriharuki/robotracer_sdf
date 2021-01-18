@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+	<world name="default">
+		<include>
+			<uri>model://sun</uri>
+		</include>
+		<include>
+			<uri>model://ground_plane</uri>
+		</include>
+		<include>
+			<name>beer0</name>
+			<uri>model://coke_can</uri>
+			<static>true</static>
+			<pose>2 1 0 0 0 0</pose>
+		</include>
+
+		<include>
+			<name>course</name>
+			<uri>model://robotracer_sdf/course</uri>
+			<static>true</static>
+			<pose>0 0 0 0 0 0</pose>
+		</include>
+		<include>
+			<name>robotracer</name>
+			<uri>model://robotracer_sdf</uri>
+			<pose>0 0 0.013 0 0 0</pose>
+		</include>
+		<!--	
+		<model name="my_mesh">
+			<pose>0 0 0  0 0 0</pose>
+			<static>true</static>
+			<link name="body">
+				<visual name="visual">
+					<geometry>
+						<mesh><uri>model://robotracer_sdf/course/meshes/straight.dae</uri></mesh>
+					</geometry>
+				</visual>
+			</link>
+		</model>
+		-->
+	</world>
+</sdf>
