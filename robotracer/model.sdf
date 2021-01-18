@@ -8,7 +8,7 @@
 
 <sdf version="1.5">
 	<model name="robotracer">
-		<static>false</static>
+		<static>true</static>
 
 <!-- ****************** Link ****************** -->
 		<link name="chassis">
@@ -34,11 +34,6 @@
 			</collision>
 			<visual name="visual_base">
 				<geometry>
-					<!--
-					<mesh>
-						<uri>model://pioneer3at/meshes/chassis.dae</uri>
-					</mesh>
-					-->
 					<box>
 						<size>0.1 0.1 0.001</size>
 					</box>
@@ -350,18 +345,19 @@
 <!-- ****************** Line sensors **********************-->
 	  <include>
 		  <uri>model://robotracer_sdf/line_sensor</uri>
-		  <pose>0.2 0 0.13 0 0 0</pose>
+		  <pose>0.1 -0.01 0.001 0 0 0</pose>
 	  </include>
-	  <joint name="line_sensor_joint" type="revolute">
+	  <include>
+		  <uri>model://robotracer_sdf/line_sensor</uri>
+		  <pose>0.1 0.01 0.001 0 0 0</pose>
+	  </include>
+	  <joint name="line_sensor_joint" type="fixed">
 		  <child>line_sensor::link</child>
 		  <parent>chassis</parent>
-		  <axis>
-			  <xyz>0 0 1</xyz>
-			  <limit>
-				  <upper>0</upper>
-				  <lower>0</lower>
-			  </limit>
-		  </axis>
+	  </joint>
+	  <joint name="line_sensor_joint" type="fixed">
+		  <child>line_sensor::link</child>
+		  <parent>chassis</parent>
 	  </joint>
   </model>
 </sdf>
