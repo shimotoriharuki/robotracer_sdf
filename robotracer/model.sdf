@@ -16,10 +16,10 @@
 			<inertial>
 				<mass>0.03</mass>
 				<inertia>
-					<ixx>0.00003</ixx>
+					<ixx>0.0000252</ixx>
 					<ixy>0.0</ixy>
 					<ixz>0.0</ixz>
-					<iyy>0.00003</iyy>
+					<iyy>0.0000252</iyy>
 					<iyz>0.0</iyz>
 					<izz>0.00005</izz>
 				</inertia>
@@ -39,94 +39,8 @@
 					</box>
 				</geometry>
 			</visual>
-			
-			<collision name="collision_sensor_bar">
-				<pose>0.0975 0 0.0 0 0 0</pose>
-				<geometry>
-					<box>
-						<size>0.095 0.01 0.001</size>
-					</box>
-				</geometry>
-			</collision>
-			<visual name="visual_sensor_bar">
-				<pose>0.0975 0 0.0 0 0 0</pose>
-				<geometry>
-					<box>
-						<size>0.095 0.01 0.001</size>
-					</box>
-				</geometry>
-			</visual>
-			
-			<collision name="collision_sensor">
-				<pose>0.150 0.0 0.0 0 0 0</pose>
-				<geometry>
-					<box>
-						<size>0.010 0.100 0.001</size>
-					</box>
-				</geometry>
-			</collision>
-			<visual name="visual_sensor">
-				<pose>0.150 0.0 0.0 0 0 0</pose>
-				<geometry>
-					<box>
-						<size>0.010 0.100 0.001</size>
-					</box>
-				</geometry>
-			</visual>
-
-			<collision name="collision_support_left">
-				<pose>0.154 0.045 -0.001 0 0 0</pose>
-				<geometry>
-					<sphere>
-						<radius>0.0005</radius>
-					</sphere>
-				</geometry>
-				<surface>
-					<friction>
-						<ode>
-							<mu>0</mu>
-							<mu2>0</mu2>
-							<slip1>1.0</slip1>
-							<slip2>1.0</slip2>
-						</ode>
-					</friction>
-				</surface>
-			</collision>
-			<visual name="visual_support_left">
-				<pose>0.154 0.045 -0.001 0 0 0</pose>
-				<geometry>
-					<sphere>
-						<radius>0.0005</radius>
-					</sphere>
-				</geometry>
-			</visual>
-			<collision name="collision_support_right">
-				<pose>0.154 -0.045 -0.001 0 0 0</pose>
-				<geometry>
-					<sphere>
-						<radius>0.0005</radius>
-					</sphere>
-				</geometry>
-				<surface>
-					<friction>
-						<ode>
-							<mu>0</mu>
-							<mu2>0</mu2>
-							<slip1>1.0</slip1>
-							<slip2>1.0</slip2>
-						</ode>
-					</friction>
-				</surface>
-			</collision>
-			<visual name="visual_support_right">
-				<pose>0.154 -0.045 -0.001 0 0 0</pose>
-				<geometry>
-					<sphere>
-						<radius>0.0005</radius>
-					</sphere>
-				</geometry>
-			</visual>
 		</link>
+
 		<link name="right_front_wheel">
 			<pose>0.011 -0.055 0.009 1.5707 0 0</pose>
 
@@ -141,7 +55,6 @@
 					<iyz>0</iyz>
 				</inertia>
 			</inertial>
-
 			<collision name="collision">
 				<geometry>
 					<cylinder>
@@ -169,6 +82,7 @@
 				</geometry>
 			</visual>
 		</link>
+
 		<link name="left_front_wheel">
 			<pose>0.011 0.055 0.009 1.5707 0 0</pose>
 
@@ -183,7 +97,6 @@
 					<iyz>0</iyz>
 				</inertia>
 			</inertial>
-
 			<collision name="collision">
 				<geometry>
 					<cylinder>
@@ -211,7 +124,7 @@
 				</geometry>
 			</visual>
 		</link>
-		-->	
+
 		<link name="right_rear_wheel">
 			<pose>-0.011 -0.055 0.009 1.5707 0 0</pose>
 
@@ -226,7 +139,6 @@
 					<iyz>0</iyz>
 				</inertia>
 			</inertial>
-
 			<collision name="collision">
 				<geometry>
 					<cylinder>
@@ -254,6 +166,7 @@
 				</geometry>
 			</visual>
 		</link>
+
 		<link name="left_rear_wheel">
 			<pose>-0.011 0.055 0.009 1.5707 0 0</pose>
 
@@ -268,7 +181,6 @@
 					<iyz>0</iyz>
 				</inertia>
 			</inertial>
-
 			<collision name="collision">
 				<geometry>
 					<cylinder>
@@ -296,66 +208,7 @@
 				</geometry>
 			</visual>
 		</link>
-		
-		<link name="camera_link">
-			<!--<pose>0.15 0.01 0.05 0 1.571 0</pose>-->
-			<pose>0.0 0.0 0.0 0 0 0</pose>
 
-			<inertial>
-				<mass>0.005</mass>
-				<inertia>
-					<ixx>0.00000001</ixx>
-					<iyy>0.00000001</iyy>
-					<izz>0.00000001</izz>
-					<ixy>0</ixy>
-					<ixz>0</ixz>
-					<iyz>0</iyz>
-				</inertia>
-			</inertial>
-			<!--
-			<visual name="visual">
-				<geometry>
-					<box>
-						<size>0.001 0.001 0.001</size>
-					</box>
-				</geometry>
-			</visual>
-			-->
-			<sensor name="camera1" type="camera">
-				<pose>0.15 0.01 0.001 0 1.571 0</pose>
-				<camera>
-					<horizontal_fov>1.8</horizontal_fov>
-					<image>
-						<width>10</width>
-						<height>10</height>
-					</image>
-					<clip>
-						<near>0.0001</near>
-						<far>1</far>
-					</clip>
-				</camera>
-				<always_on>1</always_on>
-				<update_rate>1000</update_rate>
-				<visualize>true</visualize>
-			</sensor>
-			<sensor name="camera2" type="camera">
-				<pose>0.15 -0.01 0.001 0 1.571 0</pose>
-				<camera>
-					<horizontal_fov>1.8</horizontal_fov>
-					<image>
-						<width>10</width>
-						<height>10</height>
-					</image>
-					<clip>
-						<near>0.0001</near>
-						<far>1</far>
-					</clip>
-				</camera>
-				<always_on>1</always_on>
-				<update_rate>1000</update_rate>
-				<visualize>true</visualize>
-			</sensor>
-		</link>
 <!-- ****************** Joint ****************** -->
 		<joint type="revolute" name="right_front">
 			<pose>0 0 0 0 0 0</pose>
@@ -393,22 +246,5 @@
 				<use_parent_model_frame>true</use_parent_model_frame>
 			</axis>
 		</joint>
-
-		<joint type="fixed" name="camera_joint">
-			<!--<pose>0.15 0.0 0.05 0 1.571 0</pose>-->
-			<pose>0.0 0.0 0.0 0 0 0</pose>
-			<child>camera_link</child>
-			<parent>chassis</parent>
-		</joint>
-<!-- ****************** plugin****************** -->
-<!--
-		<plugin name="SkidSteerDrivePlugin" filename="libSkidSteerDrivePlugin.so">
-			<right_front>right_front</right_front>
-			<right_rear>right_rear</right_rear>
-			<left_front>left_front</left_front>
-			<left_rear>left_rear</left_rear>
-			<MaxForce>0.1</MaxForce>
-		</plugin>
--->
-  </model>
+	</model>
 </sdf>

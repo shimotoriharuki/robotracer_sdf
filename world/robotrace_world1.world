@@ -4,28 +4,15 @@
 		<include>
 			<uri>model://sun</uri>
 		</include>
+
 		<include>
 			<uri>model://ground_plane</uri>
 		</include>
 
 		<include>
-			<name>beer0</name>
-			<uri>model://coke_can</uri>
-			<static>true</static>
-			<pose>2 1 0 0 0 0</pose>
-		</include>
-		
-		<include>
-			<name>course</name>
-			<uri>model://robotracer_sdf/course</uri>
-			<static>true</static>
-			<pose>0 0 0 0 0 0</pose>
-		</include>
-		
-		<include>
 			<name>robotracer</name>
 			<uri>model://robotracer_sdf/robotracer</uri>
-			<pose>0.303 0.037 0.013 0.005234 0.004670 1.63</pose>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
 		</include>
 
 		<plugin name='GazeboPlugin' filename='/home/user/src/GazeboPlugin/export/lib/libGazeboCoSimPlugin.so'>
