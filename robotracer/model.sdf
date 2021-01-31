@@ -14,7 +14,7 @@
 		<link name="chassis">
 			<pose>0 0 0.0015 0 0 0</pose>
 			<inertial>
-				<mass>0.03</mass>
+				<mass>0.08</mass>
 				<inertia>
 					<ixx>0.00003</ixx>
 					<ixy>0.0</ixy>
@@ -152,10 +152,10 @@
 				<surface>
 					<friction>
 						<ode>
-							<mu>1</mu>
-							<mu2>1</mu2>
+							<mu>0.8</mu>
+							<mu2>0.8</mu2>
 							<slip1>0.5</slip1>
-							<slip2>0</slip2>
+							<slip2>0.5</slip2>
 						</ode>
 					</friction>
 				</surface>
@@ -194,10 +194,10 @@
 				<surface>
 					<friction>
 						<ode>
-							<mu>1</mu>
-							<mu2>1</mu2>
+							<mu>0.8</mu>
+							<mu2>0.8</mu2>
 							<slip1>0.5</slip1>
-							<slip2>0</slip2>
+							<slip2>0.5</slip2>
 						</ode>
 					</friction>
 				</surface>
@@ -237,10 +237,10 @@
 				<surface>
 					<friction>
 						<ode>
-							<mu>1</mu>
-							<mu2>1</mu2>
+							<mu>0.8</mu>
+							<mu2>0.8</mu2>
 							<slip1>0.5</slip1>
-							<slip2>0</slip2>
+							<slip2>0.5</slip2>
 						</ode>
 					</friction>
 				</surface>
@@ -279,10 +279,10 @@
 				<surface>
 					<friction>
 						<ode>
-							<mu>1</mu>
-							<mu2>1</mu2>
+							<mu>0.8</mu>
+							<mu2>0.8</mu2>
 							<slip1>0.5</slip1>
-							<slip2>0</slip2>
+							<slip2>0.5</slip2>
 						</ode>
 					</friction>
 				</surface>
@@ -302,7 +302,7 @@
 			<pose>0.0 0.0 0.0 0 0 0</pose>
 
 			<inertial>
-				<mass>0.005</mass>
+				<mass>0.00005</mass>
 				<inertia>
 					<ixx>0.00000001</ixx>
 					<iyy>0.00000001</iyy>
@@ -366,6 +366,7 @@
 				<use_parent_model_frame>true</use_parent_model_frame>
 				<limit>
 					<velocity> 90 </velocity>
+					<effort> 0.005 </effort>
 				</limit>
 			</axis>
 		</joint>
@@ -378,6 +379,7 @@
 				<use_parent_model_frame>true</use_parent_model_frame>
 				<limit>
 					<velocity> 90 </velocity>
+					<effort> 0.005 </effort>
 				</limit>
 			</axis>
 		</joint>
@@ -390,6 +392,7 @@
 				<use_parent_model_frame>true</use_parent_model_frame>
 				<limit>
 					<velocity> 90 </velocity>
+					<effort> 0.005 </effort>
 				</limit>
 			</axis>
 		</joint>
@@ -402,6 +405,7 @@
 				<use_parent_model_frame>true</use_parent_model_frame>
 				<limit>
 					<velocity> 90 </velocity>
+					<effort> 0.005 </effort>
 				</limit>
 			</axis>
 		</joint>
