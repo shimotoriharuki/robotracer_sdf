@@ -364,6 +364,9 @@
 			<axis>
 				<xyz>0 1 0</xyz>
 				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<velocity> 90 </velocity>
+				</limit>
 			</axis>
 		</joint>
 		<joint type="revolute" name="right_rear">
@@ -373,6 +376,9 @@
 			<axis>
 				<xyz>0 1 0</xyz>
 				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<velocity> 90 </velocity>
+				</limit>
 			</axis>
 		</joint>
 		<joint type="revolute" name="left_front">
@@ -382,6 +388,9 @@
 			<axis>
 				<xyz>0 1 0</xyz>
 				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<velocity> 90 </velocity>
+				</limit>
 			</axis>
 		</joint>
 		<joint type="revolute" name="left_rear">
@@ -391,6 +400,9 @@
 			<axis>
 				<xyz>0 1 0</xyz>
 				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<velocity> 90 </velocity>
+				</limit>
 			</axis>
 		</joint>
 
