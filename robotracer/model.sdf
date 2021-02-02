@@ -368,6 +368,10 @@
 					<velocity> 90 </velocity>
 					<effort> 0.005 </effort>
 				</limit>
+
+				<dynamics> 
+					<damping> 0.00001 </damping>
+				</dynamics>
 			</axis>
 		</joint>
 		<joint type="revolute" name="right_rear">
@@ -381,6 +385,9 @@
 					<velocity> 90 </velocity>
 					<effort> 0.005 </effort>
 				</limit>
+				<dynamics> 
+					<damping> 0.00001 </damping>
+				</dynamics>
 			</axis>
 		</joint>
 		<joint type="revolute" name="left_front">
@@ -394,6 +401,9 @@
 					<velocity> 90 </velocity>
 					<effort> 0.005 </effort>
 				</limit>
+				<dynamics> 
+					<damping> 0.00001 </damping>
+				</dynamics>
 			</axis>
 		</joint>
 		<joint type="revolute" name="left_rear">
@@ -407,6 +417,9 @@
 					<velocity> 90 </velocity>
 					<effort> 0.005 </effort>
 				</limit>
+				<dynamics> 
+					<damping> 0.00001 </damping>
+				</dynamics>
 			</axis>
 		</joint>
 
