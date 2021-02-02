@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+	<world name="default">
+		<include>
+			<uri>model://sun</uri>
+		</include>
+		<include>
+			<uri>model://ground_plane</uri>
+		</include>
+
+		<include>
+			<name>robotracer</name>
+			<uri>model://robotracer_sdf/robotracer</uri>
+			<pose>0 0 0.013 0 0 0</pose>
+			<!--<pose>0.303 0.037 0.013 0.005234 0.004670 1.63</pose>-->
+		</include>
+
+		<plugin name='GazeboPlugin' filename='/home/user/src/GazeboPlugin/export/lib/libGazeboCoSimPlugin.so'>
+			<portNumber>14581</portNumber>
+		</plugin>
+	</world>
+</sdf>
