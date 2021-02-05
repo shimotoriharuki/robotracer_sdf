@@ -5,7 +5,6 @@
 	 Copyright (C) 2021  Haruki Shimotori. All right reserved.
 -->
 
-
 <sdf version="1.5">
 	<model name="robotracer">
 		<static>false</static>
@@ -126,6 +125,74 @@
 					</sphere>
 				</geometry>
 			</visual>
+
+			<visual name="visual_imu">
+				<pose>0 0 0.005 0 0 0</pose>
+				<geometry>
+					<box>
+						<size>0.010 0.010 0.005</size>
+					</box>
+				</geometry>
+			</visual>
+			<sensor name="imu" type="imu">
+				<pose>0 0 0.0025 0 0 0</pose>
+				<imu>
+					<angular_velocity>
+						<x>
+							<noise type="gaussian">
+								<mean>0.0</mean>
+								<stddev>2e-4</stddev>
+								<bias_mean>0.0000075</bias_mean>
+								<bias_stddev>0.0000008</bias_stddev>
+							</noise>
+						</x>
+						<y>
+							<noise type="gaussian">
+								<mean>0.0</mean>
+								<stddev>2e-4</stddev>
+								<bias_mean>0.0000075</bias_mean>
+								<bias_stddev>0.0000008</bias_stddev>
+							</noise>
+						</y>
+						<z>
+							<noise type="gaussian">
+								<mean>0.0</mean>
+								<stddev>2e-4</stddev>
+								<bias_mean>0.0000075</bias_mean>
+								<bias_stddev>0.0000008</bias_stddev>
+							</noise>
+						</z>
+					</angular_velocity>
+					<linear_acceleration>
+						<x>
+							<noise type="gaussian">
+								<mean>0.0</mean>
+								<stddev>1.7e-2</stddev>
+								<bias_mean>0.1</bias_mean>
+								<bias_stddev>0.001</bias_stddev>
+							</noise>
+						</x>
+						<y>
+							<noise type="gaussian">
+								<mean>0.0</mean>
+								<stddev>1.7e-2</stddev>
+								<bias_mean>0.1</bias_mean>
+								<bias_stddev>0.001</bias_stddev>
+							</noise>
+						</y>
+						<z>
+							<noise type="gaussian">
+								<mean>0.0</mean>
+								<stddev>1.7e-2</stddev>
+								<bias_mean>0.1</bias_mean>
+								<bias_stddev>0.001</bias_stddev>
+							</noise>
+						</z>
+					</linear_acceleration>
+				</imu>
+				<always_on>1</always_on>
+				<update_rate>1000</update_rate>
+			</sensor>
 		</link>
 		<link name="right_front_wheel">
 			<pose>0.011 -0.055 0.009 1.5707 0 0</pose>
@@ -152,8 +219,8 @@
 				<surface>
 					<friction>
 						<ode>
-							<mu>0.8</mu>
-							<mu2>0.8</mu2>
+							<mu>1.0</mu>
+							<mu2>1.0</mu2>
 							<slip1>0.5</slip1>
 							<slip2>0.5</slip2>
 						</ode>
@@ -194,8 +261,8 @@
 				<surface>
 					<friction>
 						<ode>
-							<mu>0.8</mu>
-							<mu2>0.8</mu2>
+							<mu>1.0</mu>
+							<mu2>1.0</mu2>
 							<slip1>0.5</slip1>
 							<slip2>0.5</slip2>
 						</ode>
@@ -211,7 +278,7 @@
 				</geometry>
 			</visual>
 		</link>
-		-->	
+		
 		<link name="right_rear_wheel">
 			<pose>-0.011 -0.055 0.009 1.5707 0 0</pose>
 
@@ -237,8 +304,8 @@
 				<surface>
 					<friction>
 						<ode>
-							<mu>0.8</mu>
-							<mu2>0.8</mu2>
+							<mu>1.0</mu>
+							<mu2>1.0</mu2>
 							<slip1>0.5</slip1>
 							<slip2>0.5</slip2>
 						</ode>
@@ -279,8 +346,8 @@
 				<surface>
 					<friction>
 						<ode>
-							<mu>0.8</mu>
-							<mu2>0.8</mu2>
+							<mu>1.0</mu>
+							<mu2>1.0</mu2>
 							<slip1>0.5</slip1>
 							<slip2>0.5</slip2>
 						</ode>
