@@ -15,14 +15,14 @@
 			<collision name="collisio">
 				<geometry>
 					<box>
-						<size>0.9 1.8 0.012</size>
+						<size>3.6 5.454 0.012</size>
 					</box>
 				</geometry>
 			</collision>
 			<visual name="visual">
 				<geometry>
 					<box>
-						<size>0.9 1.8 0.012</size>
+						<size>3.6 5.454 0.012</size>
 					</box>
 				</geometry>
 				<material>

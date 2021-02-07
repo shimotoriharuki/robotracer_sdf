@@ -9,13 +9,6 @@
 		</include>
 
 		<include>
-			<name>beer0</name>
-			<uri>model://coke_can</uri>
-			<static>true</static>
-			<pose>2 1 0 0 0 0</pose>
-		</include>
-		
-		<include>
 			<name>course</name>
 			<uri>model://robotracer_sdf/course</uri>
 			<static>true</static>
