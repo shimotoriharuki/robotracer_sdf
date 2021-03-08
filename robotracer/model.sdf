@@ -388,8 +388,8 @@
 				</geometry>
 			</visual>
 			-->
-			<sensor name="camera1" type="camera">
-				<pose>0.15 0.005 0.001 0 1.571 0</pose>
+			<sensor name="camera_lll" type="camera">
+				<pose>0.1150 -0.0606 0.001 0 1.571 0</pose>
 				<camera>
 					<horizontal_fov>1.8</horizontal_fov>
 					<image>
@@ -405,8 +405,93 @@
 				<update_rate>1000</update_rate>
 				<visualize>false</visualize>
 			</sensor>
-			<sensor name="camera2" type="camera">
-				<pose>0.15 -0.005 0.001 0 1.571 0</pose>
+			<sensor name="camera_ll" type="camera">
+				<pose>0.1336 -0.0450 0.001 0 1.571 0</pose>
+				<camera>
+					<horizontal_fov>1.8</horizontal_fov>
+					<image>
+						<width>10</width>
+						<height>10</height>
+					</image>
+					<clip>
+						<near>0.0001</near>
+						<far>1</far>
+					</clip>
+				</camera>
+				<always_on>1</always_on>
+				<update_rate>1000</update_rate>
+				<visualize>false</visualize>
+			</sensor>
+			<sensor name="camera_l" type="camera">
+				<pose>0.1458 -0.0239 0.001 0 1.571 0</pose>
+				<camera>
+					<horizontal_fov>1.8</horizontal_fov>
+					<image>
+						<width>10</width>
+						<height>10</height>
+					</image>
+					<clip>
+						<near>0.0001</near>
+						<far>1</far>
+					</clip>
+				</camera>
+				<always_on>1</always_on>
+				<update_rate>1000</update_rate>
+				<visualize>false</visualize>
+			</sensor>
+			<sensor name="camera_c" type="camera">
+				<pose>0.15 0.0 0.001 0 1.571 0</pose>
+				<camera>
+					<horizontal_fov>1.8</horizontal_fov>
+					<image>
+						<width>10</width>
+						<height>10</height>
+					</image>
+					<clip>
+						<near>0.0001</near>
+						<far>1</far>
+					</clip>
+				</camera>
+				<always_on>1</always_on>
+				<update_rate>1000</update_rate>
+				<visualize>false</visualize>
+			</sensor>
+			<sensor name="camera_r" type="camera">
+				<pose>0.1458 0.0239 0.001 0 1.571 0</pose>
+				<camera>
+					<horizontal_fov>1.8</horizontal_fov>
+					<image>
+						<width>10</width>
+						<height>10</height>
+					</image>
+					<clip>
+						<near>0.0001</near>
+						<far>1</far>
+					</clip>
+				</camera>
+				<always_on>1</always_on>
+				<update_rate>1000</update_rate>
+				<visualize>false</visualize>
+			</sensor>
+			<sensor name="camera_rr" type="camera">
+				<pose>0.1336 0.0450 0.001 0 1.571 0</pose>
+				<camera>
+					<horizontal_fov>1.8</horizontal_fov>
+					<image>
+						<width>10</width>
+						<height>10</height>
+					</image>
+					<clip>
+						<near>0.0001</near>
+						<far>1</far>
+					</clip>
+				</camera>
+				<always_on>1</always_on>
+				<update_rate>1000</update_rate>
+				<visualize>false</visualize>
+			</sensor>
+			<sensor name="camera_rrr" type="camera">
+				<pose>0.1150 0.0606 0.001 0 1.571 0</pose>
 				<camera>
 					<horizontal_fov>1.8</horizontal_fov>
 					<image>
