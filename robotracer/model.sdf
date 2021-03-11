@@ -37,9 +37,14 @@
 						<size>0.1 0.08 0.001</size>
 					</box>
 				</geometry>
+				<material>
+					<ambient>1 0 0 1</ambient>
+					<diffuse>1 0 0 1</diffuse>
+					<specular>0.1 0.1 0.1 1</specular>
+					<emissive>0 0 0 0</emissive>
+				</material>
 			</visual>
 			
-			<!--
 			<collision name="collision_sensor_bar">
 				<pose>0.0975 0 0.0 0 0 0</pose>
 				<geometry>
@@ -55,6 +60,12 @@
 						<size>0.095 0.01 0.001</size>
 					</box>
 				</geometry>
+				<material>
+					<ambient>1 0 0 1</ambient>
+					<diffuse>1 0 0 1</diffuse>
+					<specular>0.1 0.1 0.1 1</specular>
+					<emissive>0 0 0 0</emissive>
+				</material>
 			</visual>
 			
 			<collision name="collision_sensor">
@@ -72,6 +83,12 @@
 						<size>0.010 0.100 0.001</size>
 					</box>
 				</geometry>
+				<material>
+					<ambient>1 0 0 1</ambient>
+					<diffuse>1 0 0 1</diffuse>
+					<specular>0.1 0.1 0.1 1</specular>
+					<emissive>0 0 0 0</emissive>
+				</material>
 			</visual>
 
 			<collision name="collision_support_left">
@@ -126,7 +143,6 @@
 					</sphere>
 				</geometry>
 			</visual>
-			-->
 			<visual name="visual_imu">
 				<pose>0 0 0.005 0 0 0</pose>
 				<geometry>
@@ -193,6 +209,12 @@
 						<length>0.01</length>
 					</cylinder>
 				</geometry>
+				<material>
+					<ambient>0 1 0 1</ambient>
+					<diffuse>0 1 0 1</diffuse>
+					<specular>0.1 0.1 0.1 1</specular>
+					<emissive>0 0 0 0</emissive>
+				</material>
 			</visual>
 		</link>
 		<link name="left_front_wheel">
@@ -235,6 +257,12 @@
 						<length>0.01</length>
 					</cylinder>
 				</geometry>
+				<material>
+					<ambient>0 1 0 1</ambient>
+					<diffuse>0 1 0 1</diffuse>
+					<specular>0.1 0.1 0.1 1</specular>
+					<emissive>0 0 0 0</emissive>
+				</material>
 			</visual>
 		</link>
 		
@@ -278,6 +306,12 @@
 						<length>0.01</length>
 					</cylinder>
 				</geometry>
+				<material>
+					<ambient>0 1 0 1</ambient>
+					<diffuse>0 1 0 1</diffuse>
+					<specular>0.1 0.1 0.1 1</specular>
+					<emissive>0 0 0 0</emissive>
+				</material>
 			</visual>
 		</link>
 		<link name="left_rear_wheel">
@@ -320,6 +354,12 @@
 						<length>0.01</length>
 					</cylinder>
 				</geometry>
+				<material>
+					<ambient>0 1 0 1</ambient>
+					<diffuse>0 1 0 1</diffuse>
+					<specular>0.1 0.1 0.1 1</specular>
+					<emissive>0 0 0 0</emissive>
+				</material>
 			</visual>
 		</link>
 		
@@ -348,12 +388,12 @@
 			</visual>
 			-->
 			<sensor name="camera_large" type="camera">
-				<pose>0.15 0.0 0.005 0 1.571 0</pose>
+				<pose>0.15 0.0 0.001 0 1.571 0</pose>
 				<camera>
 					<horizontal_fov>3</horizontal_fov>
 					<image>
-						<width>100</width>
-						<height>10</height>
+						<width>101</width>
+						<height>1</height>
 					</image>
 					<clip>
 						<near>0.0001</near>
