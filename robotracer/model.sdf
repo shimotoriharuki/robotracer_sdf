@@ -390,7 +390,7 @@
 			<sensor name="camera_large" type="camera">
 				<pose>0.15 0.0 0.001 0 1.571 0</pose>
 				<camera>
-					<horizontal_fov>1.8</horizontal_fov>
+					<horizontal_fov>3</horizontal_fov>
 					<image>
 						<width>101</width>
 						<height>1</height>
