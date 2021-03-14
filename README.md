@@ -1,6 +1,6 @@
 # Overview
 
-This repository contains SDF models of Robotracer and courses that can be used with gazebo.
+This repository contains SDF models of Robotracer and courses that can be used with Gazebo.
 
 [![Image from Gyazo](https://i.gyazo.com/54cb4e3f9a71cce0f993f760ce5acfc0.png)](https://gyazo.com/54cb4e3f9a71cce0f993f760ce5acfc0)
 [![Image from Gyazo](https://i.gyazo.com/2eefb19b1df63b6948b77ff164f69d65.png)](https://gyazo.com/2eefb19b1df63b6948b77ff164f69d65)
