@@ -7,7 +7,7 @@ This repository contains SDF models of Robotracer and courses that can be used w
 
 # Usage
 
-## Prerequisites
+## prerequisite
 
 You need to be able to boot the gazebo on Ubuntu.
 The operation was confirmed in the following environment.
