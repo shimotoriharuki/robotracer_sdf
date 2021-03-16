@@ -9,10 +9,14 @@ This repository contains SDF models of Robotracer and courses that can be used w
 
 ## prerequisite
 
-You need to be able to boot the gazebo on Ubuntu.
+1. You need to be able to boot the gazebo on Ubuntu.
 The operation was confirmed in the following environment.
 - Ubuntu 18.04
 - Gazebo 9.0.0
+
+2. Please complete [this tutorial](https://jp.mathworks.com/help/robotics/ug/perform-co-simulation-between-simulink-and-gazebo.html?lang=en) as it assumes that you will be communicating with simulink.If you do not need to communicate with simulink, comment out the `<plugin>` tag in the `.world` file in the world directory.
+
+
 
 ## Clone
 
